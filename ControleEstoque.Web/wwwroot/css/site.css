@@ -20,3 +20,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

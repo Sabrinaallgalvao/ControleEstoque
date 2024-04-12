@@ -23,32 +23,33 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Cadastro
                             </a>
-
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <ul>
-                                <li>@Html.ActionLink("Grupos de Produtos", "GrupoProduto", "Cadastro")</li>
-                                <li>@Html.ActionLink("Marcas de Produtos", "MarcaProduto", "Cadastro")</li>
-                                <li>@Html.ActionLink("Locais de Armazenamento", "LocalProduto", "Cadastro")</li>
-                                <li>@Html.ActionLink("Unidades de Medida", "UnidadeMedida", "Cadastro")</li>
-                                <li>@Html.ActionLink("Produtos", "Produto", "Cadastro")</li>
-                                <li>@Html.ActionLink("Países", "Pais", "Cadastro")</li>
-                                <li>@Html.ActionLink("Estados", "Estado", "Cadastro")</li>
-                                <li>@Html.ActionLink("Cidades", "Cidade", "Cadastro")</li>
-                                <li>@Html.ActionLink("Fornecedores", "Fornecedor", "Cadastro")</li>
-                                <li>@Html.ActionLink("Perfis de Usuários", "PerfilUsuario", "Cadastro")</li>
-                                <li>@Html.ActionLink("Usuários", "Usuario", "Cadastro")</li>
-                                 </ul>           
+
+                                <a class="dropdown-item" href="/Cadastro/GrupoProduto">Grupos de Produtos</a>
+                                <a class="dropdown-item" href="/Cadastro/MarcaProduto">Marcas de Produtos</a>
+                                <a class="dropdown-item" href="/Cadastro/LocalProduto">Locais de Armazenamento</a>
+                                <a class="dropdown-item" href="/Cadastro/UnidadeMedida">Unidades de Medida</a>
+                                <a class="dropdown-item" href="/Cadastro/Pais">Países</a>
+                                <a class="dropdown-item" href="/Cadastro/Estado">Estados</a>
+                                <a class="dropdown-item" href="/Cadastro/Cidade">Cidades</a>
+                                <a class="dropdown-item" href="/Cadastro/Fornecedor">Fornecedores</a>
+                                <a class="dropdown-item" href="/Cadastro/PerfilUsuario">Perfis de Usuários</a>
+                                <a class="dropdown-item" href="/Cadastro/Usuario">Usuários</a>
                             </div>
+
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Operações
                             </a>
-                            <div>
-                                <ul class="dropdown-menu">
-                                    <li>@Html.ActionLink("Sobre", "Sobre", "Operacoes")</li>
-                                </ul>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <a class="dropdown-item" href="/Operacoes/EntradaEstoque">Entrada de Produto</a>
+                                <a class="dropdown-item" href="/Operacoes/SaidaEstoque">Saida de Estoque</a>
+                                <a class="dropdown-item" href="/Operacoes/LancPerdaProduto">Lançamento de Perdas de Produto</a>
+                                <a class="dropdown-item" href="/Operacoes/Inventario">Invertário de estoque</a>
                             </div>
                         </li>
 
@@ -56,31 +57,22 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Relatórios
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("Sobre", "Sobre", "Relatorios")</li>
-                            </ul>
-
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+
+                                <a class="dropdown-item" href="/Relatorios/PosicaoEstoque">Posição de Estoque</a>
+                                <a class="dropdown-item" href="/Relatorios/ReabastecimentoEstoque">Reabastecimento de Estoque</a>
                             </div>
+
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Gráficos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>@Html.ActionLink("Sobre", "Sobre", "Graficos")</li>
-                            </ul>
-
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+
+                                <a class="dropdown-item" href="/Graficos/PerdaMes">Perdas</a>
+                                <a class="dropdown-item" href="/Graficos/EntradaSaidaMensal">Entrada e Saídas</a>
                             </div>
                         </li>
 
@@ -90,6 +82,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Sobre" asp-action="Sobre">Sobre</a>
                         </li>
+                </div>
             </div>
         </nav>
     </header>
