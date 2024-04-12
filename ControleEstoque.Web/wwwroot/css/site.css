@@ -29,3 +29,9 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.dropdown-divider {
+    border-top: 1px solid #e3e3e3;
+    max-width: 85%;
+    margin: 0 auto;
+}
