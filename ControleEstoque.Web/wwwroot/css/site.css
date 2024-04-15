@@ -35,3 +35,13 @@ body {
     max-width: 85%;
     margin: 0 auto;
 }
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.titulo{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
